@@ -18,8 +18,8 @@ C6FA709C7A5DB354=输出通道:
 081F5207A6D5AA8E=采样格式:
 F97A12BF98D450CF=采样率:
 E8589A5C2472187A=采样点
-;3E83534995169108=Request block size:
-;0FF98CDC4588805A=Request sample rate:
+3E83534995169108=请求的块大小:
+0FF98CDC4588805A=请求的采样率:
 ;8F5EC83B8413B57D=REAPERVirtWndDlgHost
 16464B290024A7A0=音频设备设置
 BAC64C1B2E060EE5=关闭
@@ -109,7 +109,7 @@ EE28FE89D1A7A151=编辑区域
 5C973D1CB80B0D9F=生成...
 61946358B1034B76=静音
 96E5C67E1437194E=声像
-;61EB857EEC517894=Record arm
+61EB857EEC517894=启用录音
 8FC86C263760ACB9=音量
 C3EB4B7A6BCD5F3C=新名称:
 09939A2A8DB73EDE=性能仪表
@@ -949,9 +949,9 @@ BA8A5EA843F33060=无法重做
 ;77FCCED98127C864=50 cent
 ;A159C77E1AA46F0C=Off
 ;79DF6C21E88B8F28=Show the last user action in REAPER's menu bar. Clicking the action will open the undo window.
-;B726931672EE1B2F=Above Normal
-;76036DCB216B5D75=Highest
-;FC0E6CF88C55D677=Time Critical
+B726931672EE1B2F=高于标准
+76036DCB216B5D75=最高
+FC0E6CF88C55D677=实时
 ;BE8A32189AE58F83=Edit cursor
 ;747DCF8B8F0D8AE4=-inf..+0dB
 ;85D1498B98DE6886=-inf..+6dB
@@ -991,7 +991,7 @@ F7B45F7E4B7A392C=结束
 ;9320B43CE8F50284=timeline
 
 [DLG_103] ; IDD_CFG_WAVEOUT
-;87581AC5D2800078=Buffers:
+87581AC5D2800078=缓冲区:
 ;08325007B4EB10C5=x
 ;^042F4DCA75E1BE47=16 bit
 ;^CC85D146650F3E66=24 bit
@@ -1006,15 +1006,15 @@ F7B45F7E4B7A392C=结束
 ;^C6FA709C7A5DB354=Output channels:
 
 [DLG_104] ; IDD_CFG_ASIO
-;079C56F9CD13F6B5=Enable inputs:
+079C56F9CD13F6B5=启用输入:
 8FECF2FB07698C41=ASIO 设置...
-;E03433B4BCCBB5D9=Pre-zero output buffers, useful on some hardware (higher CPU use)
-;C454DD4172CEBF46=Ignore ASIO reset messages (needed for some buggy drivers)
-;1FA658ADC1732D9B=ASIO Driver:
-;FDB97B20FF12B77B=Output range:
-;7B252F5391C4399B=first
-;7194096AEB85F79F=last
-;ED7D207F6EC85E77=ASIO thread priority:
+E03433B4BCCBB5D9=预先置空输出缓冲, 在某些硬件上有用 (更高的CPU占用)
+C454DD4172CEBF46=忽略 ASIO 复位消息 (在某些有bug的驱动上需要)
+1FA658ADC1732D9B=ASIO 驱动:
+FDB97B20FF12B77B=输出范围:
+7B252F5391C4399B=开始
+7194096AEB85F79F=结束
+ED7D207F6EC85E77=ASIO 线程优先级:
 ;^0FF98CDC4588805A=Request sample rate:
 ;^3E83534995169108=Request block size:
 
@@ -1023,7 +1023,7 @@ F7B45F7E4B7A392C=结束
 
 [DLG_118] ; IDD_PREFS_AUDIOCONFIG
 0314604C3913412E=音频系统:
-;E9C70EA3B03F0A91=Allow projects to override device sample rate
+E9C70EA3B03F0A91=允许工程设置覆盖设备的采样率
 ;^16464B290024A7A0=Audio device settings
 
 [DLG_120] ; IDD_MISCSRCINFO
@@ -1405,25 +1405,25 @@ FE1F26B1104E7C16=最近工程列表中的最大工程数:
 
 [DLG_156] ; IDD_PREFS_AUDIO
 771BE661607B660C=音频设置
-;A965CC5A8248EA92=Close audio device when stopped and application is inactive
-;A3E497C30F573907=Close audio device when inactive and tracks are record armed
-;88D3DE337F7E5D78=Close audio device when inactive and ReWire devices are open
-;1B98A491F616C4FD=Close audio device when stopped and active (less responsive)
-;5CA7B4BF0F7E6D68=Warn when unable to open audio/MIDI devices
+A965CC5A8248EA92=停止播放并且程序不活动时关闭音频设备
+A3E497C30F573907=即使有启用录音的音轨，也关闭音频设备
+88D3DE337F7E5D78=即使有ReWire设备被开启，也关闭音频设备
+1B98A491F616C4FD=即使程序活动，停止时也关闭设备 (less responsive)
+5CA7B4BF0F7E6D68=当不能打开音频或者MIDI设备时警告
 AC7AE7A176147DD5=暂停时短暂淡出
 6AF1C766315DA216=播放时短暂淡入
 DB9672C1C2AE2D3E=不处理静音音轨 (静音音轨将不占用内CPU)
-;BA491E7B58F98628=Solos default to in-place solo (alt+click does a normal solo)
-;D923B88E7CA24E87=Solo in front dimming:
-;7F8E5925A86A3457=Track mute fade:
+BA491E7B58F98628=默认使用原地独奏 (Alt+点击 以正常方式独奏)
+D923B88E7CA24E87=独奏时其它音轨减弱:
+7F8E5925A86A3457=静音淡入淡出时间:
 5C326A50E71323BF=ms (最大100 ms)
 6721707C5C16AB36=当音量超过
 C5A76E243C28A4AB=通道命名/映射
-;4554DB9B26BD7F5D=Input channel name aliasing/remapping
-;BC4FB48156117258=Edit Names/Map...
-;FC22C6EF8E185AD2=Output channel name aliasing/remapping
-;7744ECC4A8F97396=Show non-standard stereo channel pairs (i.e. Input 2/Input 3 etc)
-;C0364B3FF6C30D24=Reset on playback start
+4554DB9B26BD7F5D=输入通道名字别名/重新映射
+BC4FB48156117258=编辑别名/映射...
+FC22C6EF8E185AD2=输出通道名字别名/重新映射
+7744ECC4A8F97396=显示非标准的声道配对 (例如: 输入2/输入3 等等)
+C0364B3FF6C30D24=重新开始播放时复位静音轨
 ;^D8D27C186BA6D499=dB
 
 [DLG_157] ; IDD_PREFS_CSURF
@@ -1604,22 +1604,22 @@ E1F42879AE5000D8=音轨/发送/硬件输出默认设置
 BF552AF240D8670E=音轨音量推子默认增益:
 580A497A940808A8=在调音台中显示
 91357BBC27D0ACD1=主发送(上层发送)
-;FB9BB78435AB99DF=Default visible envelopes:
-;430C86B44E7308AE=Volume (pre-FX)
-;6B8804B0AFE7CF33=Pan (pre-FX)
-;76F64D47C2B668BB=Default envelope point shape:
-;062FABF640E027BC=Arm new envelopes
-;A2A77FC9AADD4CE8=Default automation mode:
-;AE7E61A37889E975=Free item positioning
+FB9BB78435AB99DF=默认可见的包络:
+430C86B44E7308AE=音量 (pre-FX)
+6B8804B0AFE7CF33=声像 (pre-FX)
+76F64D47C2B668BB=默认包络点形状:
+062FABF640E027BC=新包络启用录制
+A2A77FC9AADD4CE8=默认自动化模式:
+AE7E61A37889E975=自由摆放对象位置
 3EB9822C6981339B=新工程默认音轨高度:
 4E462B362D2C3662=录音设置:
 CE6B20605FC62E9A=按钮1
-;D234EE899BA0FD67=Send default gain:
-;60A5F7836A421CBA=Hardware output default gain:
-;EFBA29BAE66FE5BD=Send/hardware output default mode:
-;0997CAABB7B35BF7=Sends send MIDI by default
-;016A11D102C83486=Sends send audio by default
-;11FAB17EEF44466E=Sends / Track Hardware Outputs
+D234EE899BA0FD67=默认发送增益:
+60A5F7836A421CBA=默认硬件输出增益:
+EFBA29BAE66FE5BD=默认 发送/硬件输出 模式:
+0997CAABB7B35BF7=默认发送 MIDI
+016A11D102C83486=默认发送音频
+11FAB17EEF44466E=发送 / 音轨硬件输出
 ;^D8D27C186BA6D499=dB
 ;^8FC86C263760ACB9=Volume
 ;^96E5C67E1437194E=Pan
@@ -1864,15 +1864,15 @@ FEF6844CA6E20459=创建新工程时，使用该工程文件作为工程模板:
 E128E6C758BBADD7=新建工程时提示保存
 1182D3164197978A=新建工程时打开工程属性
 FD87B02FFB447670=工程加载
-;2C88DA69457EE61F=Look for project media items in project directory before qualified path
+2C88DA69457EE61F=在询问丢失的文件路径之前，先在工程目录查找文件
 C1CB39730620196F=工程加载时提示未找到的文件
 CD5317E280F27A31=加载工程时显示启动画面
 D05A2F9A08ACFC82=工程保存
 EC403AA6A8B772FE=使用相对路径存储工程用到的文件
 9594CC6401422D4C=保存工程时，把旧的工程改名为 .rpp-bak
-;EEFB5DE4DC59F257=Keep multiple versions
+EEFB5DE4DC59F257=保留多个版本
 7096563D9523FBAD=带时间戳的备份
-;EFAD845FE18F5C54=Keep undo histories
+EFAD845FE18F5C54=保留撤销历史记录
 16EF1DE677B6A5F2=每
 0A1D95E50872708A=分钟:
 1BDA1BF4E19E27FD=在工程目录中保存带时间戳的备份文件
@@ -1955,12 +1955,12 @@ D71FC359E353E6C2=外观设置
 ;^D35AD13842A55DEA=Markers
 
 [DLG_219] ; IDD_PREFS_KBD
-;1075019A504F73BB=Commit changes to some edit fields after 1 second of no typing
-;4F3654C5B59115AD=Use alternate keyboard section when recording
-;025B90FA447C6C83=Prevent ALT key from focusing main menu
-;E6999CD562DABC49=Assign keyboard shortcuts to actions or change existing shortcuts
-;E6B1DF361BBAF9D5=View keyboard shortcuts as printable/searchable web page
-;5D511FB1F16D0206=Multi-touch
+1075019A504F73BB=如果超过一秒钟未输入，自动提交某些输入框的内容
+4F3654C5B59115AD=录音时使用另一套快捷键
+025B90FA447C6C83=禁止Alt键激活主菜单
+E6999CD562DABC49=关联快捷键到动作，或者修改已有快捷键
+E6B1DF361BBAF9D5=在网页中显示当前的键盘快捷键
+5D511FB1F16D0206=多点触摸
 ;6E3CC58D60F87F79=Enable multi-touch swipe
 ;46EB4D9A870E3786=Suppress inertia
 ;6D5C19B857B216B2=Enable multi-touch zoom
@@ -2321,8 +2321,8 @@ D71FC359E353E6C2=外观设置
 ;^D840E3186B2B9581=OK
 
 [DLG_261] ; IDD_CFG_DUMMY
-;50664F4D152E1976=Default samplerate:
-;43AFA61E828F6214=Buffer size:
+50664F4D152E1976=默认采样率:
+43AFA61E828F6214=缓冲区大小:
 ;^E8589A5C2472187A=samples
 ;^D858BC186B3FE51D=Hz
 
@@ -2641,7 +2641,7 @@ F4C36821D01C71C1=拉伸到对象大小
 ;^F09E4B5C35AA14B9=Cancel
 
 [DLG_422] ; IDD_CFG_WASAPI
-;761D1B1A8EA033E1=Block size:
+761D1B1A8EA033E1=块大小:
 ;^042F4DCA75E1BE47=16 bit
 ;^CC85D146650F3E66=24 bit
 ;^5188BC03D80E2D31=32 bit
@@ -3000,10 +3000,11 @@ ACDC31485D6E3705=微移/设置对象位置
 ;^A7BA0064C3A88716=Output Device:
 
 [DLG_474] ; IDD_PREFS_PATH
-;81BBA2B36371EDB5=Path settings
-;973B67107DB3B77C=Default render path (if left empty the current project directory, if any, will be used):
-;E19AF0FCD67934A5=Default recording path, when project is unsaved and no recording path is configured:
-;CC1F1831F53F5456=Alternate waveform peak (.reapeaks) cache path, only used if enabled in Preferences/Media:
+81BBA2B36371EDB5=路径设置
+973B67107DB3B77C=默认生成目录 (留空则使用工程文件目录):
+E19AF0FCD67934A5=默认录音目录 (当工程未保存并且未设置录音目录时):
+CC1F1831F53F5456=Alternate waveform peak (.reapeaks) cache path, only used if enabled in Preferences/Media:
+CC1F1831F53F5456=可选的波形(.reapeaks文件)缓存路径，只有在首选项/媒体中启用之后才会使用:
 ;^F685FB3A91025549=Browse...
 
 [DLG_475] ; IDD_MEDIAITEMPROPS
@@ -3070,10 +3071,10 @@ E7DA02B3D72195E5=默认淡入/淡出形状:
 0ECD19FA2DD06E9F=默认交叉过渡形状:
 8C101F7FFA7127FD=右键点击交叉过渡部分以设置其形状
 FEF3F95B755C2F5E=对MIDI音符力度启用自动淡入/淡出和交叉过渡
-;BEFCAA56940B8887=Loop source for imported items
-;6C6E4A4439C0D4F8=Loop source for new MIDI items
-;945688A19C91E2AF=Loop source for recorded items
-;F86B38011657919B=Time selection auto-punch audio recording creates loopable section
+BEFCAA56940B8887=对导入的对象启用循环
+6C6E4A4439C0D4F8=对新建MIDI对象启用循环
+945688A19C91E2AF=对录制的对象启用循环
+F86B38011657919B=对选曲自动切入/切出的录音，自动创建循环段落
 
 [DLG_478] ; IDD_PREFS_RENDER
 ;4DD2B47DA4D97292=Rendering settings
@@ -9927,13 +9928,13 @@ EB98A378C97A81EA=编辑文本事件
 ;2564D884E323133A=Choose key map to open:
 ;D6815CCB49065863=The settings below will be applied to new tracks
 ;6A4004041F988DAF=Clear recent project list?
-;BA17125F561726C9=when not recording
-;27B5DC0DF980814A=when stopped
-;EB0F9F3E9AE022CC=any time
+BA17125F561726C9=当不在录音时
+27B5DC0DF980814A=当停止时
+EB0F9F3E9AE022CC=任何时间
 ;B967FB615627BFEF=Choose project:
-;B2FCC2F5B1F8F8AB=No automatic muting
-;7B28AE2C817AC0F2=Automatically mute master track
-;4F5BCFD07BF12DA0=Automatically mute any track
+B2FCC2F5B1F8F8AB=禁用自动静音
+7B28AE2C817AC0F2=自动静音主通道
+4F5BCFD07BF12DA0=自动静音任何轨道
 ;5C93D72D90574575=Dots and lines
 ;F0B5784486B886BC=Filled samples
 ;6E9205BD6F506B72=Outlined samples
@@ -10004,24 +10005,24 @@ EB98A378C97A81EA=编辑文本事件
 ;2C9DA92A74FFB037=When checked, REAPER will close the audio devices whenever not playing back audio. 
 ;F4C34E3A62159EDB=When checked, REAPER will warn about audio or MIDI devices that were unable to be opened.
 ;38C9EA3C40061076=Makes REAPER not process tracks that are muted, allowing less CPU/disk usage for these tracks. Unmuting may not be instant with this checked.
-;4797CE7638526D69=Makes soloing a track also solo the routing of that track, Toggle which behavior is used by holding alt while clicking a solo button.
+4797CE7638526D69=独奏某个音轨的同时，也独奏它发送到的音轨。按住Alt再点击独奏按钮切换到正常独奏模式。
 ;5E0E23A55E611073=The master track, or any track, can be automatically muted (like a circuit breaker) when the volume exceeds a certain level, to protect speakers and ears.
 ;CDA1B340C7057066=Enables audio input name aliasing, letting you rename your inputs for easier selection.
 ;A28FB91F31A627A6=Enables audio output name aliasing, letting you rename your outputs for easier selection.
 ;1BCA4F5650495E9C=When checked, allows you to treat odd pairs of inputs/outputs as stereo pairs, i.e. not just Channels 1/2, but 2/3 as well.
 
 [prefs_audiodev]
-;2DF91730D72FFD6E=(error getting info)
-;3EF994B7D37DC445=(latency: %d ms)
-;34D436BFAA4E8EDA=No ASIO drivers found!
-;FFB6002103B79E16=Driver Default (recommended)
+2DF91730D72FFD6E=(获取信息失败)
+3EF994B7D37DC445=(延迟: %d ms)
+34D436BFAA4E8EDA=未找到 ASIO 驱动!
+FFB6002103B79E16=驱动默认 (建议)
 ;E5984828A8AD9D24=WDM Kernel Streaming
 ;9BF5F65011E69DC5=DirectSound
 ;0C5C12F89052285A=WaveOut
 ;8931E3B9B4BEB40B=ASIO
-;E60104721C668F07=Dummy Audio
-;85CCC5FED305997F=WASAPI (Windows 7/Vista, experimental)
-;B8ECBD868F6E6AFE=Not found: 
+E60104721C668F07=Dummy Audio
+85CCC5FED305997F=WASAPI (Windows 7/Vista, 实验性)
+;B8ECBD868F6E6AFE=未找到: 
 ;^FC0E6CF88C55D677=Time Critical
 ;^76036DCB216B5D75=Highest
 ;^B726931672EE1B2F=Above Normal
@@ -10723,10 +10724,10 @@ FA3FBBA0B7D7E042=外部编辑器
 ;44DB7EC0EF2A942C=This setting can be used to enable sequencing of audio blocks for live playback. Also search the Actions list for \"seek\".
 
 [prefs_track]
-;BEA7703C415C702E=Small
-;B9135835A9A61DD0=Medium
-;BA7EEA47BC48E27A=Large
-;FC84F036666CED03=Use current
+BEA7703C415C702E=小
+B9135835A9A61DD0=中等
+BA7EEA47BC48E27A=大
+FC84F036666CED03=使用当前
 ;70B30F9E44B34DC7=Post-FX (v1 deprecated)
 ;^1A236FDD7E5FF32C=Custom
 ;^1FF9566969CABE07=Post-Fader (Post-Pan)
