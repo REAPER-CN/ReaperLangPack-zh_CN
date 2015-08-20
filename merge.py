@@ -1,3 +1,4 @@
+#encoding: utf-8
 def read_tranlated(fn):
     translated = {}
     for line in open(fn):
@@ -19,8 +20,8 @@ def read_tranlated(fn):
 
 def merge(translated_file, new_template_file, merged_file):
     translated = read_tranlated(translated_file)
-    print '%s translated' % len(translated)
     fp = open(merged_file, 'w')
+    fp.write('#NAME:简体中文 (Kommit 汉化)\n')
     cnt = 0
     for line in open(new_template_file):
         if not line.startswith(';'):
@@ -39,8 +40,9 @@ def merge(translated_file, new_template_file, merged_file):
             fp.write(line)
 
     print '%s merged' % cnt
-    print translated.keys()
+    for k, v in translated.items():
+        print k, v.decode('utf-8')
     fp.close()
 
 if __name__ == '__main__':
-    merge('zh_CN.ReaperLangPack.old', 'template_20130615.txt', 'zh_CN.ReaperLangPack')
+    merge('zh_CN.ReaperLangPack.old', 'template_2015-03-23.ReaperLangPack', 'zh_CN.ReaperLangPack')
