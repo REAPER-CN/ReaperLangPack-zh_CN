@@ -9,6 +9,10 @@
 ; 5CA1E00000000000=1.2
 ; This makes the above dialog 1.2x wider than default.
 
+; 简体中文语言包发布地址：https://bitbucket.org/Kommit/reaper_cn
+; 特别感谢：zs、盖盖、青猫、JacH 以及众多给翻译提供建议的朋友。
+; 交流群：243473647
+
 [common]
 ;042F4DCA75E1BE47=16 bit
 ;CC85D146650F3E66=24 bit
@@ -2042,11 +2046,11 @@ E2E6BC6DF438FDBD=多通道电平表
 ;3CF333030AFB4087=[enables multiprocessing of live input, but may reduce performance at low latencies] 
 
 [DLG_204] ; IDD_ABOUT_LICENSE
-;F06854788A1D9107=Licensed to:
-;52F0480E83915AA8=License type:
-;6F5769926BC1C226=Purchase REAPER license key online
-;1B1B5CF87FA36D80=Hide registered name from main titlebar
-;1D3EDF9A66681F71=Hide \"commercial license\" text
+F06854788A1D9107=授权给:
+52F0480E83915AA8=授权类型:
+6F5769926BC1C226=在线购买 REAPER 授权
+1B1B5CF87FA36D80=在标题栏中隐藏注册的名字
+1D3EDF9A66681F71=隐藏 \"商业授权\" 文本
 ;D98D89186C45DDE1=--
 ;629CB18B4001F9DC=You have an old REAPER license, click here to see if you are eligible for an upgrade!
 ;^756B500741E261D4=Import license key...
@@ -5565,11 +5569,35 @@ AB9A2766519667D6=启用连锁编辑
 ;254ABC5AE33BD903=Error writing file
 ;28E12469A3271389=Thank You!
 ;D03DC131AB7C4B2C=Buy Me [%d]
+
+26FC58CEF44C94A5=感谢您购买 REAPER!
+154224048230E8E2=REAPER 不是免费软件。\r\n\r\n它是一款收费软件。如果您使用它超过 60 天，那么您需要购买一份授权。
+B447AAFC75584E81=您已经使用 REAPER 大概 
+11F529656E722695=您已经体验 REAPER 大概 
+8814EC6D42D9DBCC=1 天
+D0E83932879B1FE1=%d 天
+91A3A621CEA91E58=您运行了 REAPER 
+26693E25829DF457=1 次。
+DEAD0DB0B630B538=%d 次。
+E1724295AF0E72B0=总时间大概
+41C57231FB923701=REAPER 授权的价格非常划算。我们为个人非商业用途，以及小规模公司提供折扣价格。
+0035F90FBE34516F=我们显示这段文字，而不是限制试用版的功能，因为我们觉得我们的用户并不喜欢使用技术手段强制授权。
+04FA9C99A7E3E33F=删除授权密钥
+8B9A76F494C70F92=您确定要删除当前的授权密钥？\r\n\r\n(您必须拥有这份密钥的副本才能重新授权本软件)
+63A8748786CE1342=确认删除授权密钥
+1233760996DC4604=导入授权密钥:
+510C2D221F9562E4=导入授权密钥出错
+9ED57C7769D0C7C0=不能写文件
+7F8EA1BD935B9BFF=不能读文件
+254ABC5AE33BD903=写文件出错
+28E12469A3271389=感谢你!
+D03DC131AB7C4B2C=买我 [%d]
+
 32EE0E776F726A01=继续试用
 ;D38A26905AC66F97=Credits
-;20BDED648E738AA0=Purchase
-;E347F43935F8D866=License and User Agreement
-;C6013D59706F3AEB=Changelog
+20BDED648E738AA0=购买
+E347F43935F8D866=使用许可及用户协议
+C6013D59706F3AEB=版本历史
 ;^756B500741E261D4=Import license key...
 
 [accel_sec]
