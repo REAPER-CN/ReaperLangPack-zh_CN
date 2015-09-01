@@ -2,10 +2,11 @@
 def read_tranlated(fn):
     translated = {}
     for line in open(fn):
-        line = line.rstrip()
+        line = line.rstrip('\r\n')
+        print line
         if not line:
             continue
-        if line.startswith('\xef\xbb\xbf#'):
+        if line.startswith('#'):
             continue
         if line.startswith(';'):
             continue
@@ -45,4 +46,4 @@ def merge(translated_file, new_template_file, merged_file):
     fp.close()
 
 if __name__ == '__main__':
-    merge('zh_CN.ReaperLangPack.old', 'template_2015-03-23.ReaperLangPack', 'zh_CN.ReaperLangPack')
+    merge('zh_CN.ReaperLangPack.old', 'template_v501.ReaperLangPack', 'zh_CN.ReaperLangPack')
