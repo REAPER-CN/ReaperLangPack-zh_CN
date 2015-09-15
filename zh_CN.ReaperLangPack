@@ -1659,13 +1659,13 @@ AF3AC146DC0BBCFA=限制 MIDI 硬件输出至一个线程
 771BE661607B660C=音频设置
 A965CC5A8248EA92=停止播放并且程序不活动时关闭音频设备
 A3E497C30F573907=即使有启用录音的音轨，也关闭音频设备
-88D3DE337F7E5D78=即使有ReWire设备被开启，也关闭音频设备
+88D3DE337F7E5D78=即使有 ReWire 设备被开启，也关闭音频设备
 1B98A491F616C4FD=即使程序活动，停止时也关闭设备 (less responsive)
 5CA7B4BF0F7E6D68=当不能打开音频或者 MIDI 设备时警告
 AC7AE7A176147DD5=暂停时短暂淡出
 6AF1C766315DA216=播放时短暂淡入
 DB9672C1C2AE2D3E=不处理静音音轨 (静音音轨将不占用内CPU)
-;28DF1513ACC005F5=Reduce CPU use of silent tracks during playback (experimental)
+28DF1513ACC005F5=回放时减少安静的音轨的 CPU 使用 (实验性)
 BA491E7B58F98628=默认使用原地独奏 (Alt+点击 以正常方式独奏)
 D923B88E7CA24E87=独奏时其它音轨减弱:
 7F8E5925A86A3457=静音淡入淡出时间:
@@ -1678,7 +1678,7 @@ FC22C6EF8E185AD2=输出通道名字别名/重新映射
 7744ECC4A8F97396=显示非标准的声道配对 (例如: 输入2/输入3 等等)
 C0364B3FF6C30D24=重新开始播放时复位静音轨
 ;F67D1FDC9D0ABC37=main outs
-;644113753F9A2FD9=Default metronome output:
+644113753F9A2FD9=默认节拍器输出:
 ;^D8D27C186BA6D499=dB
 
 [DLG_157] ; IDD_PREFS_CSURF
@@ -1873,10 +1873,10 @@ EFBA29BAE66FE5BD=默认 发送/硬件输出 模式:
 0997CAABB7B35BF7=默认发送 MIDI
 016A11D102C83486=默认发送音频
 11FAB17EEF44466E=发送 / 音轨硬件输出
-;B4940BDB9BBA9666=Scaling for new volume envelopes:
-;70F01048EA75C03D=Amplitude scaling
-;F783860F79715118=Volume fader scaling
-;B9830B26CC085916=Warn when changing volume envelope scaling will change envelope sound
+B4940BDB9BBA9666=新的包络的标尺刻度:
+70F01048EA75C03D=响度标尺刻度
+F783860F79715118=音量推子标尺刻度
+B9830B26CC085916=当改变音量包络标尺刻度会改变包络的声音时警告
 ;^89325B4900977A87=Tracks
 ;^D8D27C186BA6D499=dB
 ;^8FC86C263760ACB9=Volume
@@ -3272,13 +3272,13 @@ ACDC31485D6E3705=微移/设置对象位置
 ;^2F799723962762C7=Stop
 
 [DLG_473] ; IDD_PREFS_AUDIOCONFIG_MAC
-;7A1E9510735905CF=Audio Device:
-;0AE9C7C56AF2D331=Audio MIDI Setup...
-;CB5CD17AF6D1158C=Ignore running change notifications (may be required for some devices)
-;5BE762CA30ABAF67=If you need to use multiple devices, open Audio MIDI Setup and create an aggregate device.
-;E9564FD174148DB7=Allow use of different input and output devices (legacy option, not recommended)
+7A1E9510735905CF=音频设备:
+0AE9C7C56AF2D331=音频 MIDI 设置...
+CB5CD17AF6D1158C=忽略运行时变更通知 (某些设备可能需要)
+5BE762CA30ABAF67=如果您需要使用多个设备，打开音频 MIDI 设置，并创建一个聚集设备。
+E9564FD174148DB7=允许用不同的输入和输出设备 (过时的选项，不推荐)
 A7BA0064C3A88716=输出设备:
-;21A1FC512D832DC6=Please use Audio MIDI setup to create an aggregate device instead!
+21A1FC512D832DC6=请使用音频 MIDI 设置创建一个聚集设备！
 ;^16464B290024A7A0=Audio device settings
 ;^0FF98CDC4588805A=Request sample rate:
 ;^3E83534995169108=Request block size:
@@ -11247,7 +11247,7 @@ EB98A378C97A81EA=编辑文本事件
 ;D9618E186C20AB75=:(
 ;D2DE5E701E5C239D=Save key map as:
 ;2564D884E323133A=Choose key map to open:
-;D6815CCB49065863=The settings below will be applied to new tracks
+D6815CCB49065863=下面的设置会应用到新的音轨
 ;4C33B83EACCD6BD6=<prompt on load>
 ;E40679D8AB3E3516=Last project tabs
 ;A3FAE16E6B2F9235=Prompt
@@ -11322,7 +11322,7 @@ B2FCC2F5B1F8F8AB=禁用自动静音
 ;^79DF6C21E88B8F28=Show the last user action in REAPER's menu bar. Clicking the action will open the undo window.
 
 [prefs_audio]
-;85222607B31F6CB7=Use all project master outs
+85222607B31F6CB7=全部使用工程的主输出设备
 
 [prefs_audio_help]
 ;9864B7B74DAD01DC=When enabled, REAPER will share audio devices with other applications by closing the audio hardware not active.
