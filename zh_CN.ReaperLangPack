@@ -3362,14 +3362,14 @@ BEFCAA56940B8887=对导入的对象启用循环
 F86B38011657919B=对选区自动切入/切出的录音，自动创建循环段落
 
 [DLG_478] ; IDD_PREFS_RENDER
-;4DD2B47DA4D97292=Rendering settings
-;BA67DC3729684BA7=Block size to use when rendering:
-;2B9B793C0245346A=samples (leave blank for auto)
-;EC400AB11F1ABACB=Allow anticipative FX processing when rendering (better multiprocessing)
-;45BB0225F77E6549=Limit apply FX/render stems to realtime (good for some plug-ins)
-;789CC946B6370D63=Process all tracks during stem render (some hardware-based plugins may need this)
-;403CF079511FCB84=Tail length when rendering project or stems, or freezing tracks:
-;363E7FC94526FBB0=When freezing, render the entire track length if there are track or per-take FX
+4DD2B47DA4D97292=生成设置
+BA67DC3729684BA7=生成时的块大小:
+2B9B793C0245346A=采样点 (留空则使用自动设置)
+EC400AB11F1ABACB=允许在生成时使用效果预处理 (更好地利用多进程)
+45BB0225F77E6549=限制 应用效果器/生成冻结轨 操作为实时 (适宜某些插件)
+789CC946B6370D63=生成冻结轨时处理所有音轨 (某些基于硬件的插件可能需要该选项)
+403CF079511FCB84=尾部延伸长度，在生成工程或者冻结音轨时:
+363E7FC94526FBB0=冻结时，如果有音轨效果器或者片段效果器，生成音轨的全长。
 ;^D8B3B3186B8C817F=ms
 
 [DLG_486] ; IDD_CONFIG_EXPORT
@@ -3583,13 +3583,13 @@ BD2850523C80580D=在寻轨之前，播放至下一个工程标记，当前区域
 ;^D8B3B3186B8C817F=ms
 
 [DLG_518] ; IDD_PREFS_REC_LOOP
-;AF924A0E2CDF74CB=Loop recording settings
-;4F2B31BBF3D2C295=In loop recording, discard incomplete first or last takes if at least one full loop was recorded
-;EE14963C25F0108C=MIDI recording within empty time selection always creates selection-length media item
-;208EE71E50F7ABCB=When recording and looped, add recorded media to project:
-;86CDD3047B701541=On stop (default, recommended)
-;C5B9E0F7E2858D5B=Create new files on loop
-;04B1EA7C5BB5F4F8=At each loop (creates new files, good for recording multiple audio layers on the fly etc)
+AF924A0E2CDF74CB=循环录制设置
+4F2B31BBF3D2C295=循环录制时，丢弃不完整的第一个或者最后一个片段，如果至少有一个完整的循环录制完成。
+EE14963C25F0108C=在空白的选区中录制 MIDI 时，始终创建一个和选区一样长的 MIDI 对象
+208EE71E50F7ABCB=当录制并且循环时，添加录制的媒体对象至工程:
+86CDD3047B701541=在停止时 (默认, 推荐)
+C5B9E0F7E2858D5B=每次循环创建新文件
+04B1EA7C5BB5F4F8=在每次循环 (创建新文件，可用来实时录制多层音频)
 
 [DLG_519] ; IDD_PREFS_AUTOMATION
 ;2774BF0E396FA6EA=Automation recording return speed:
