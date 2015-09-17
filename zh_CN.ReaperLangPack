@@ -255,7 +255,7 @@ C065E9FEE11B2862=(当前工程)
 ;3C63123253BCD74E=Usage
 ;D89CC7186B79C49A=to
 821B3CD32107333D=音轨颜色
-383F243464148105=瞬态检测设置
+383F243464148105=峰值检测设置
 EA7EDFD029F80877=向左微移
 2E287BE9B3A7F568=向右微移
 ;3CF04EFDC66C18B2=Snap to unit
@@ -1164,7 +1164,7 @@ A159C77E1AA46F0C=关闭
 B726931672EE1B2F=高于标准
 76036DCB216B5D75=最高
 FC0E6CF88C55D677=实时
-;BE8A32189AE58F83=Edit cursor
+BE8A32189AE58F83=编辑光标
 ;747DCF8B8F0D8AE4=-inf..+0dB
 ;85D1498B98DE6886=-inf..+6dB
 ;A97DAA4FBD1778A5=(default)
@@ -1795,25 +1795,25 @@ BB30EBB441D29823=工程加载之后显示注释
 ;^F09E4B5C35AA14B9=Cancel
 
 [DLG_172] ; IDD_PREFS_EDITCFG
-;4D8F7A5A9245F919=Editing behavior
-;23C01768B8090D2F=Move edit cursor to start of time selection on time selection change
-;4C88CB0B79BBCE00=Move edit cursor when pasting/inserting media
-;D4CCD39898DAEF23=Move edit cursor to end of recorded items on record stop
-;5E6B52214FFB6F82=Link loop points to time selection
-;FCBF848D058095E1=Clear loop points on click in ruler
-;46FE32F3924ECB82=Clear time selection when edit cursor moves on click in arrange view
-;347BEF6E7C817645=Vertical zoom center:
-;584AC3CE0E6BC82B=Horizontal zoom center:
-;AF239E1DB5AA0E08=Transient detection
-;5FC0AC4569E4E2AF=Adjust sensitivity...
-;5597FFD1F336E75D=Tab through MIDI notes
-;8EB832E42FDC2501=Treat media item edges as transients
-;2EB90B46315D20B6=Locked item ripple editing behavior:
+4D8F7A5A9245F919=编辑行为
+23C01768B8090D2F=当选区改变时讲编辑光标移至选区开始
+4C88CB0B79BBCE00=粘贴/插入对象时移动光标
+D4CCD39898DAEF23=录制停止时将光标移至所录制对象末尾
+5E6B52214FFB6F82=关联循环点至选区
+FCBF848D058095E1=点击标尺时清楚循环点
+46FE32F3924ECB82=光标移动或者点击编排区时清除选区
+347BEF6E7C817645=垂直缩放中心:
+584AC3CE0E6BC82B=水平缩放中心:
+AF239E1DB5AA0E08=峰值检测
+5FC0AC4569E4E2AF=调整灵敏度...
+5597FFD1F336E75D=Tab 经过 MIDI 音符
+8EB832E42FDC2501=将媒体对象边缘视作峰值
+2EB90B46315D20B6=锁定的对象连锁编辑时的行为
 ;E11DAEF2BBEB112C=Allow dual trim (edit shared media item edges) only if both items are selected 
 ;32B5CB1F9A8B8705=Crossfades stay together during fade edits when trim content behind media items is enabled
-;AA5A7A99565E6043=Automatically delete empty tracks created by dragging items below the last track and back
-;93565C719250C592=Dragging the source start offset of the active take adjusts the offset for all takes
-;6F6DCD0B40734C2E=If no items are selected, some split/trim/delete actions affect all items at the edit cursor
+AA5A7A99565E6043=拖回时自动删除通过向下拖动对象至最后一个音轨下方时创建的音轨
+93565C719250C592=拖动某个片段的媒体源偏移时(Alt+拖动)，移动所有片段的媒体源
+6F6DCD0B40734C2E=如果没有对象被选中，一些分割/削减/删除动作影响光标下的所有对象
 
 [DLG_173] ; IDD_LTCITEMINFO
 ;84F43D3EDA83383C=SMPTE Generator Properties
@@ -3205,11 +3205,11 @@ E4DC0CDFF2939210=录制之后在媒体对象上新增加的片段自动染色
 ;^F09E4B5C35AA14B9=Cancel
 
 [DLG_465] ; IDD_TABTOTRANS
-;797A749705D923F0=Sensitivity:
-;A365272127088DD7=Use zero crossings (not as precise but prevents clicks)
-;590A5D6481E41A6A=Display threshold in media items while this window is open
-;3C62AC8F3EE3535C=Media item selection follows tab-to-transient
-;851859DA354311F2=Move by at least 1 pixel when navigating by transients
+797A749705D923F0=灵敏度:
+A365272127088DD7=使用过零点 (不精确但是可以避免咔哒声)
+590A5D6481E41A6A=此窗口打开时在媒体对象上显示阈值
+3C62AC8F3EE3535C=媒体对象选择跟随『Tab 至峰值』
+851859DA354311F2=通过尖峰导航时至少移动一像素
 ;^383F243464148105=Transient Detection Settings
 ;^649ECB151A2B4705=Slider1
 ;^0832A307B4EB9DCE=%
@@ -11441,17 +11441,17 @@ CAF2BD75C8084664= - 非常激进
 ;5BA7E753ADD1DED6=Change ReWire slave settings for the current project. To save this project's settings as default, go to File/Project Settings.
 
 [prefs_edit]
-;68A4FA0E1BCE8F2A=Track at center of view
-;A12006DF4EF831AB=Top visible track
-;7E040028AA0C843B=Last selected track
-;D2F5A848BF54967F=Track under mouse cursor
-;35F00B6FDBA01CF8=Edit cursor or play cursor (default)
-;C94DCA651A8805D8=Center of view
-;AC7DA40A71A28A0C=Mouse cursor
-;385CF76CE687AD9C=Locked items interrupt ripple
-;36D2B335DF906511=Locked items interrupt ripple per-track
-;080E32BDDCA4B887=Locked items are unaffected by ripple
-;895C922ED3E9E77C=Locked items are affected by ripple (lock ignored)
+68A4FA0E1BCE8F2A=在视图中心的音轨
+A12006DF4EF831AB=最上面的可见音轨
+7E040028AA0C843B=上次选中的音轨
+D2F5A848BF54967F=鼠标指针下面的音轨
+35F00B6FDBA01CF8=编辑光标或者播放光标 (默认)
+C94DCA651A8805D8=视图中心
+AC7DA40A71A28A0C=鼠标光标
+385CF76CE687AD9C=在锁定对象处中断连锁
+36D2B335DF906511=在每轨的锁定对象处中断连锁
+080E32BDDCA4B887=锁定的对象不参与连锁
+895C922ED3E9E77C=锁定的对象参与连锁 (忽略锁定)
 ;^BE8A32189AE58F83=Edit cursor
 
 [prefs_edit_help]
