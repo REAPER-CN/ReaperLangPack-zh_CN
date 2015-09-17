@@ -25,5 +25,6 @@ https://bitbucket.org/Kommit/reaper_cn/get/default.zip
 目前汉化完成度还比较低，汉化作者是在业余时间一点一点完成的，有错误在所难免。
 如果有任何问题或者想提供帮助，请直接联系汉化作者 Kommit。
 另外作者也在初学 REAPER，在软件使用以及软件混音方面的问题，不保证能提供帮助，但欢迎互相交流。
-作者QQ: 75203782
+作者 QQ: 75203782
+REAPER 讨论 QQ 群: 243473647
 Email: kommit ＠ qq 点 com
