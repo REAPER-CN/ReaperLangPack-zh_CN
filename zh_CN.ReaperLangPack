@@ -957,8 +957,8 @@ BA8A5EA843F33060=无法重做
 99B80DC023AB26F6=无法撤销
 ;83BDD8AC8FA8B69C=Comp
 ;BA0039FB59D95325=MASTER
-;DB927D2B0D27A97F=Primary
-;D4C05341A170A81B=Secondary
+DB927D2B0D27A97F=主要
+D4C05341A170A81B=次要
 ;4EC7F7461DF2D993=&Note:
 ;7026A011104B1446=&Value:
 ;742F5D29C7564242=&Velocity:
@@ -1631,21 +1631,21 @@ AF3AC146DC0BBCFA=限制 MIDI 硬件输出至一个线程
 ;^F8E6A0B81A77C5E9=Reset all MIDI devices
 
 [DLG_154] ; IDD_PREFS_PLUGINS
-;46B2F90EFC202F2F=Automatically resize FX windows:
-;D898C4186B75D6AA=up
-;C195B1ACA8F965EB=down
-;5F4770DBE32AC217=Set foreground to floating windows when selected
-;9907FEDD82A2071D=Auto-float newly created FX windows
-;1550387FA6A569B5=Auto-open FX windows after quick-add
-;C79A6C3B62E20D60=Auto-dock new FX chain windows
-;DFFCF4A65D1E6FA1=Auto-open FX add dialog when opening empty track FX chain
-;9595DB1667ACF7DF=Auto-position new floating FX windows
-;DF6D0B9803A8FDB4=Auto-position new FX chain windows
-;C7B479203D71CE7C=Only allow one FX chain window open at a time
-;6DCB0D632CA6A596=Open track FX window on track selection change
-;146BEFCAD3C82C9C=Only if any FX window is open
-;20D2538F88926BA7=Show current track FX in FX button right-click menu
-;0958FACBCAB8ED55=Recently Added list max:
+46B2F90EFC202F2F=自动调整效果器窗口大小:
+D898C4186B75D6AA=向上
+C195B1ACA8F965EB=向下
+5F4770DBE32AC217=选中时将浮动窗口放在最前
+9907FEDD82A2071D=自动浮动新创建的效果器窗口
+1550387FA6A569B5=快速添加之后自动打开效果器窗口
+C79A6C3B62E20D60=自动停靠新效果器链窗口
+DFFCF4A65D1E6FA1=打开空的效果器链时自动打开添加效果器窗口
+9595DB1667ACF7DF=自动调整新浮动效果器窗口的位置
+DF6D0B9803A8FDB4=自动调整新效果器链窗口的位置
+C7B479203D71CE7C=同一时刻只允许打开一个效果器链窗口
+6DCB0D632CA6A596=音轨选择发生变化时，打开效果器窗口
+146BEFCAD3C82C9C=仅当有效果器窗口正在打开时
+20D2538F88926BA7=在效果器按钮的右键菜单中显示当前音轨的效果器
+0958FACBCAB8ED55=最近添加的列表中的最大数量:
 ;^1EEF91D385882BBE=Plug-ins
 
 [DLG_155] ; IDD_WAVESINK_CFG
@@ -1708,18 +1708,18 @@ A0B572EEEF748C02=浏览
 ;^F09E4B5C35AA14B9=Cancel
 
 [DLG_160] ; IDD_PREFS_EDITORS
-;DFD1209B13D93BA2=External editors
+DFD1209B13D93BA2=外部编辑器
 ;^D9B12705AD844C62=List1
 ;^18E4377E5DDC2B7A=Add
 ;^B90A279A7257C793=Edit
 ;^F812C7145E261C23=Remove
 
 [DLG_161] ; IDD_EDITORITEM
-;33A92C8FA5438A7C=Editor Configuration
-;64B7B388D17F971F=File type (extension):
-;15A9DE70DEE257AE=Primary Editor:
-;3367C07971B9528E=(leave blank to set the default editors)
-;8AD3CF43B42E168A=Secondary Editor:
+33A92C8FA5438A7C=编辑器设置
+64B7B388D17F971F=文件类型 (扩展名):
+15A9DE70DEE257AE=主要编辑器:
+3367C07971B9528E=(留空设置默认编辑器)
+8AD3CF43B42E168A=次要编辑器:
 ;^F685FB3A91025549=Browse...
 ;^D840E3186B2B9581=OK
 ;^F09E4B5C35AA14B9=Cancel
@@ -2106,13 +2106,13 @@ A858AA3DA9AB3CEC=清空缓存/重新扫描
 02CD79828A026675=扫描时获取 VST 的名称/类型
 C14B8D54F4D0074D=如果多个 VST 使用了相同的 dll 文件名，只有一个可以用: 要么在目录列表中靠后的那个，要么多层目录中的最上层那个。
 B5A31DD6277997A5=默认使用通用界面 (而不是用插件界面)
-;401188713EF0876C=Knob mode:
-;BED87C6BBD50429C=VST compatibility
-;DD8560BEDCAF9B53=Don't flush synthesizer plug-ins on stop
-;F27EE9EB697AD546=Inform plug-ins of offline rendering state
-;EB5AD63A75E962D6=Bypass audio while opening plug-in config window (good for some non-threadsafe VSTs)
-;9AFB50287E6BE13A=UAD-1 synchronous mode (reduces CPU munch) - requires anticipative FX disabled
-;D7D5E6EF54BF3AAB=Allow complete unload of VST plug-ins (reduces memory use, but may not be compatible)
+401188713EF0876C=旋钮模式:
+BED87C6BBD50429C=VST 兼容性
+DD8560BEDCAF9B53=停止时不清空合成器插件
+F27EE9EB697AD546=通知插件离线生成状态
+EB5AD63A75E962D6=打开插件设置窗口时旁通音频 (对一些线程不安全的 VST 有用)
+9AFB50287E6BE13A=UAD-1 同步模式 (减少 CPU 占用) - 需要禁用预处理效果
+D7D5E6EF54BF3AAB=允许完全卸载 VST 效果器 (减少内存占用，但是可能导致不兼容)
 ;^1EB556E18D613E28=Add...
 
 [DLG_212] ; IDD_PREFS_PROJECT
@@ -3436,17 +3436,17 @@ CAC61707DC51ADCE=打开一个 MIDI 编辑器针对每个:
 ;^F10F4B1B4D6DC250=Clear
 
 [DLG_505] ; IDD_PREFS_PLUGINS_COMPAT
-;323A73E4A444C161=Plug-in compatibility
-;A8C678D44921F2AE=Reduce denormalization from plug-ins (recommended)
-;F311E750F641E369=VST bridging/firewalling:
-;A0CB77A8EEC504D8=[feature not installed]
+323A73E4A444C161=插件兼容性
+A8C678D44921F2AE=减少插件中的非规格化 (denormalization) (推荐)
+F311E750F641E369=VST 桥接/防火墙:
+A0CB77A8EEC504D8=[功能未安装]
 ;79E5A635270D54C7=Terminate REAPER immediately if a plug-in corrupts the process heap
 ;4A1AC9C73685E230=Note: this security setting will cause REAPER to crash immediately if a buggy or malicious plug-in is detected.
-;EDA0C6E598F85DA1=Pre-zero plug-in output buffers
+EDA0C6E598F85DA1=预先清空插件输出缓冲区
 ;2293DF1EA49D559D=Set minimal undo, bridging/firewalling, and other compatibility settings per-plugin by pressing the + button on the FX UI, or by right-clicking the plug-in name in the FX browser.
 ;A8951FCFD25B68DF=Note: some plug-ins (especially synths and samplers) store a lot of data with the project, which can cause interruptions when REAPER saves undo points for plug-in parameter adjustments.
 ;14E244B04A725B43=Enabling minimal undo for a plug-in that stores a lot of data will prevent these interruptions without affecting project save/load, but means that undoing plug-in parameter adjustments may not work as expected.
-;8F87D2EAD1659D21=Disable saving full plug-in state (not recommended, set minimal undo for the plug-in instead)
+8F87D2EAD1659D21=禁用保存完整插件状态 (不推荐, 建议为插件设置最小撤销状态)
 ;D43728829B5F35B2=Disabling full plug-in state saving can prevent these interruptions, but may also prevent plug-ins from loading exactly as they were saved, when reopening a project.
 
 [DLG_506] ; IDD_RENDERDLG1
@@ -11532,8 +11532,8 @@ E986AA118171E760=切换至削减/读取模式
 ;^436541C52DD92FA4=1 cent
 
 [prefs_extedit]
-;DC64AADB760F7E81=Choose program to open:
-;0D17C62157FFDC68=Extension
+DC64AADB760F7E81=选择要打开的程序:
+0D17C62157FFDC68=扩展名
 ;^DB927D2B0D27A97F=Primary
 ;^D4C05341A170A81B=Secondary
 ;^A97DAA4FBD1778A5=(default)
@@ -11941,11 +11941,11 @@ A116495A42DD0EDF=音频对象开始
 ;38F660F8084D144A=The settings on this page control how jog/scrub works. See Editing Behavior/Mouse Modifiers to control when jog/scrub happens.
 
 [prefs_plugin]
-;B0BE24AD06F75CA2=VST/AU bridging/firewalling:
-;BAEF587C3AA07700=Automatic bridging (when required)
-;831BE53E4A04D874=In separate plug-in process
-;816D9333A010CBFD=In dedicated process per-plugin
-;2230D079B09366B9=Only native (disable bridging)
+B0BE24AD06F75CA2=VST/AU 桥接/防火墙:
+BAEF587C3AA07700=自动桥接 (在需要时)
+831BE53E4A04D874=在单独的插件进程中
+816D9333A010CBFD=每个插件一个专用进程
+2230D079B09366B9=仅本地 (禁用桥接)
 ;CB26A3CA44D04B68=You must restart REAPER to disable heap corruption protection.
 ;031550A99A3DBA44=Note: you have selected to use the synchronous UAD-1 compatible mode!\r\n\r\nIt is highly recommended to disable \"Anticipative FX processing\", reducing native plug-in performance and multiprocessor utilization.\r\nTo re-enable \"Anticipative FX processing\" later, go to Preferences/Audio/Buffering. \r\n\r\nDisable \"Anticipative FX processing now\"?
 ;^D790926420BA2EB7=Notice
@@ -11969,8 +11969,8 @@ A116495A42DD0EDF=音频对象开始
 ;11E4CCF10DE5ADCC=When changing track selection, if there is already an FX chain window open, automatically open the newly selected track's FX chain.
 
 [prefs_plugin_knob]
-;1D75478FD209EC92=Circular
-;8D3D701CD5FDAF4F=Relative
+1D75478FD209EC92=循环
+8D3D701CD5FDAF4F=相对
 ;^AB2A3D4EF1C9D1A8=Default
 ;^CA47517BDEFA4232=Linear
 
