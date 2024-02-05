@@ -21,4 +21,5 @@
 如果有任何问题或者想提供帮助，可以在 GitHub 提交 [Issue](https://github.com/REAPER-CN/ReaperLangPack-zh_CN/issues/new/choose/) 或者发起 [PR](https://github.com/REAPER-CN/ReaperLangPack-zh_CN/compare/)。
 
 3. 其他问题
-Cockos REAPER 交流 QQ 群: 243473647
+Cockos REAPER 交流 QQ 群: 243473647（该群已被停止使用，清添加新群）
+Cockos REAPER 交流 QQ 群: 701359927
